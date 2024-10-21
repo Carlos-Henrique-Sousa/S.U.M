@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.services {
+    width: 100%;
+    max-width: 1300px;
+    padding: 80px 20px;
+    margin: auto;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 600;
+}
+
+.services h1:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #333;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.card {
+    padding: 50px;
+    min-height: 400px;
+    flex: 1;
+    min-width: 200px;
+    background: #f2f2f2;
+    color: #333;
+    padding: 40px 15px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.sbox i {
+    font-size: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.sbox h3 {
+    font-size: 28px;
+}
+
+.sbox p {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.sbox .btn {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 7px 15px;
+    border-radius: 15px;
+    transition: background 0.3s, transform 0.3s;
+    margin: 15px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.sbox .btn:hover {
+    background: MediumSeaGreen;
+    border: 1px solid #333;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.card:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.card:hover:after {
+    transform: rotate(13deg);
+    background: Aquamarine;
+    border-radius: 20px;
+}

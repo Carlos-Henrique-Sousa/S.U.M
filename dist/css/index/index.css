@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #f7f7e0;
+    /* Background color */
+    color: #333;
+    /* Default text color */
+}
+
+
+/* Navbar Styles */
+
+.navbar_Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_link {
+    color: black;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#LogoImg {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.botao .btn {
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao .btn:hover {
+    background-color: #294d42;
+    /* Hover background color */
+    color: #fff;
+    /* Hover text color */
+}
+
+
+/* Hero Section */
+
+.hero01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+}
+
+.text_hero01 {
+    max-width: 50%;
+}
+
+.texto01_01 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.texto02_01 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #000;
+}
+
+.texto03_01 {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.Img_hero01 {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+    .hero01 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text_hero01 {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    .Img_hero01 {
+        width: 80%;
+    }
+    .navbar_Header {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto02_01 {
+        font-size: 2.2rem;
+    }
+    .texto03_01 {
+        font-size: 1rem;
+    }
+    .Img_hero01 {
+        width: 100%;
+    }
+}
+
+.container01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-color {
+    background-color: #e0f7fa;
+    /* Cor de fundo abaixo da esfera */
+    padding: 20px;
+    /* Espaçamento ao redor da esfera */
+    border-radius: 10px;
+    /* Cantos arredondados para o contêiner */
+}
+
+.cadast-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
